@@ -1,0 +1,43 @@
+div {
+    box-sizing: border-box;
+}
+.row {
+    border: 10px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.row:after {
+
+}
+.element {
+    border: 10px solid green;
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+}
+.image {
+    border: 10px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+.text {
+    border: 10px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+@media all and (min-width: 768px) {
+    .element {
+        color: blue;
+    }
+}
+@media all and (min-width: 992px) {
+    .element {
+        color: green;
+    }
+}
+@media all and (min-width: 1200px) {
+    .element {
+        color: red;
+    }
+}

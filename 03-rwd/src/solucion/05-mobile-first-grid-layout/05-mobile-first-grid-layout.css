@@ -1,0 +1,57 @@
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  max-width: 1024px;
+  display: grid;
+  grid-template-areas: 
+    "nav"
+    "article"
+    "aside";
+}
+
+nav {
+  background-color: green;  padding: 1em;
+  box-sizing: border-box;
+  grid-area: nav;
+}
+
+article {
+  height: 200px;
+  background-color: blue;
+  padding: 1em;
+  box-sizing: border-box;
+  background-image: url(img/content-is-like-water-1.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: article;
+}
+
+aside {
+  background-color: red;
+  padding: 1em;
+  font-size: 1em;
+  box-sizing: border-box;
+  height: 50px;
+  grid-area: aside;
+}
+
+@media all and (min-width: 600px) {
+  body {
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: 
+      "nav nav"
+      "article aside";
+  }
+  article {
+    height: 400px;
+    background-image: url(img/content-is-like-water-3.jpg);
+  }
+}
+
+@media all and (min-width: 1000px) {
+  article {
+    height: 500px;
+    background-image: url(img/content-is-like-water-5.jpg);
+  }
+}
